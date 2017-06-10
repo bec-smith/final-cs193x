@@ -1,0 +1,211 @@
+
+
+body {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: PALETURQUOISE;
+}
+
+#menu {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  max-width: 700px;
+}
+
+#menu h1 {
+  margin: 0;
+}
+
+#menu h2 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+ input[type=submit] {
+  margin-top: 1em;
+  animation: stretch 2s;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+ input, #menu select {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+
+  font-family: 'Shadows Into Light', cursive;
+  height: 2em;
+}
+
+ #menu select {
+  width: 100%;
+}
+input[type=text]
+{
+  align-self: center;
+  width: 50%;
+}
+
+ input:focus, #menu select {
+  outline: none;
+}
+
+ input[type=submit] {
+  background-color: powderblue;
+  border: 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+ input[type=text]:focus {
+  border-bottom: 2px solid black;
+}
+
+ input[type=text] {
+  background-color: lightcyan;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+#menu .submit-button {
+  text-align: center;
+}
+
+.inactive {
+  display: none !important;
+}
+
+#aboutScreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: plum;
+}
+#border{
+  border: thick dashed LIGHTPINK;
+  text-align: center;
+  padding: 30px;
+}
+#me{
+  width:450px;
+  height:300px;
+  border: medium dotted white;
+}
+
+#adoptionScreen{
+  background-color: lavender;
+
+}
+
+
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#adoptionScreen a.button:hover,a.button:hover {
+  background-color: white;
+  color: black;
+}
+
+#adoptionScreen button, .button{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#menu select {
+  background-color: #ddfff8;
+}
+
+#adoptionScreen  {
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#adoptionScreen ul  {
+  font-family: 'Slabo 27px', serif;
+  animation: myanimation 1s;
+}
+@keyframes myanimation {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+
+#adoptionScreen img {
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+  border: medium dashed black;
+
+}
+
+
+#dog-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+a#petfinder:link{
+
+color: black;
+text-decoration: none;
+}
+
+#adoptionScreen  img.checkbox {
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: block;
+}

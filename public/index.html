@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>CS193X Final: Adopt a Dog!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+
+  <script src="js/menu-screen.js" defer></script>
+  <script src="js/about-screen.js" defer></script>
+  <script src="js/adopt-screen.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+  <header  id = "header" class = "inactive">
+    <nav>
+      <div id="links">
+        <a class="button" id = "home">Home</a>
+        <a class="button" id = "aboutme">About Me</a>
+        <a href="http://petfinder.com"target="_blank" class="button" id = "petfinder">Petfinder</a>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="menu" class = "inactive" >
+    <h1>Dog Adoption</h1>
+    <fieldset>
+      <form>
+        <h2>1. Select a dog breed:</h2>
+        <select id="breed-selector"></select>
+        <!-- <input type="text" id="breed-input" value="Yorkshire Terrier" /> -->
+        <h2>2. Select a shelter:</h2>
+        <select id="shelter-selector"></select>
+        <!-- <input type="text" id="location-input" value="94305" /> -->
+        <input type="submit" value="Go" />
+      </form>
+    </fieldset>
+  </div>
+
+
+  <div id = "aboutScreen" class = "inactive">
+    <div id = "border">
+      <h2> This is the final project for CS193X.</h2>
+      <h3> Created By: Bec Smith </h3>
+      <h3> Lecturer: Victoria Kirst </h3>
+      <img id = "me" src="images/me.jpg" alt="picture of me">
+    </div>
+  </div>
+
+
+  <div id = "adoptionScreen" class = "inactive">
+    <h1>Dogs that matched your selections</h1>
+    <h2> Click image to see more info! </h2>
+    <div id="dog-container"></div>
+    <input type="text" id="email-input" placeholder="Please enter your email so I can send your selections!" />
+    <button id="send">SEND</button>
+    <h1 id = "success" class = "inactive"> Task Completed </h1>
+    <h1 id = "failed" class = "inactive"> Task Failed </h1>
+
+  </div>
+  <h3 id = "error" class = "inactive"> No Dogs Match Your Search - Try Again </h3>
+</body>
+</html>
